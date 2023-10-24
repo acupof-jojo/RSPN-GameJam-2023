@@ -52,9 +52,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3735207601425759287, guid: 7f6d7690f38b11f4fb610a0f23edda0f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6226655367448390474, guid: 7f6d7690f38b11f4fb610a0f23edda0f, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832933809100358121, guid: 7f6d7690f38b11f4fb610a0f23edda0f, type: 3}
+      propertyPath: m_Color.a
+      value: 0.18431373
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832933809100358121, guid: 7f6d7690f38b11f4fb610a0f23edda0f, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832933809100358121, guid: 7f6d7690f38b11f4fb610a0f23edda0f, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832933809100358121, guid: 7f6d7690f38b11f4fb610a0f23edda0f, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8276085289322833075, guid: 7f6d7690f38b11f4fb610a0f23edda0f, type: 3}
       propertyPath: m_Name
@@ -111,6 +131,7 @@ MonoBehaviour:
   sellButton: {fileID: 4997613812003632813}
   buildPlot: {fileID: 5983133483948069021, guid: a4b8bb2b2a053ca459a792f1486fa2ce, type: 3}
   targetList: []
+  rangeVisual: {fileID: 5996045018822915473}
 --- !u!114 &4997613812003632813 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2718823852454805259, guid: 7f6d7690f38b11f4fb610a0f23edda0f, type: 3}
@@ -125,6 +146,11 @@ MonoBehaviour:
 --- !u!1 &5175972652573126752 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2825053424295573958, guid: 7f6d7690f38b11f4fb610a0f23edda0f, type: 3}
+  m_PrefabInstance: {fileID: 6980619739708164518}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5996045018822915473 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3735207601425759287, guid: 7f6d7690f38b11f4fb610a0f23edda0f, type: 3}
   m_PrefabInstance: {fileID: 6980619739708164518}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &8062427508360387932 stripped

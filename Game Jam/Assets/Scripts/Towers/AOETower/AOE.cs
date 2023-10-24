@@ -149,5 +149,15 @@ public class AOE : MonoBehaviour
         }
     }
 
+    [SerializeField] private GameObject rangeVisual;
+
+    void OnMouseEnter() {
+        rangeVisual.SetActive(true);
+    }
+
+    void OnMouseExit() {
+        rangeVisual.SetActive(false);
+    }
+
 
 }

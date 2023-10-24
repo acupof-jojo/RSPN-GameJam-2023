@@ -64,6 +64,9 @@ public class UpgradeTower : MonoBehaviour
             if (targetList.Count > 0) {
                 attack(targetList[0]);
             }
+            if (targetList.Count > 1) {
+                attack(targetList[1]);
+            }
             attackWait += attackSpeed;
         }
     }
@@ -119,6 +122,16 @@ public class UpgradeTower : MonoBehaviour
     public void CloseUpgradeUI() {
         upgradeUI.SetActive(false);
         UImanager.main.SetHoveringState(false);
+    }
+
+    [SerializeField] private GameObject rangeVisual;
+
+    void OnMouseEnter() {
+        rangeVisual.SetActive(true);
+    }
+
+    void OnMouseExit() {
+        rangeVisual.SetActive(false);
     }
 
 
