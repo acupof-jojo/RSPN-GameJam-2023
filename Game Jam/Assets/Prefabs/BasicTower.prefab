@@ -597,9 +597,10 @@ GameObject:
   - component: {fileID: 810083959365114737}
   - component: {fileID: 7432758006531622355}
   - component: {fileID: 3234621015841558739}
+  - component: {fileID: 7906291085802233758}
   m_Layer: 0
   m_Name: BasicTower
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -754,6 +755,20 @@ MonoBehaviour:
   upgradeTo: {fileID: 1313550342672018709, guid: 168b02bbc72e9e444ba2bc6ef73d67d1, type: 3}
   buildPlot: {fileID: 5983133483948069021, guid: a4b8bb2b2a053ca459a792f1486fa2ce, type: 3}
   targetList: []
+--- !u!114 &7906291085802233758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7604256071929828603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 577581573057f4c498780a3d23d30377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Buildable: {fileID: 5983133483948069021, guid: a4b8bb2b2a053ca459a792f1486fa2ce, type: 3}
+  health: 10
 --- !u!1 &7851928071125994353
 GameObject:
   m_ObjectHideFlags: 0
