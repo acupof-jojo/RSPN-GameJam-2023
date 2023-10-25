@@ -13,6 +13,7 @@ public class Tower : MonoBehaviour
 
     //Tower tower1 = new Tower(2,0.5,5);
     CircleCollider2D rangeCollider;
+    [SerializeField] CircleCollider2D interactCollder;
     public GameObject prefabProjectile;
 
     public float attackSpeed = 0.3f;
@@ -24,6 +25,8 @@ public class Tower : MonoBehaviour
     [SerializeField] private Button sellButton;
     [SerializeField] private GameObject upgradeTo;
     [SerializeField] private GameObject buildPlot;
+
+
 
     public List<Collider2D> targetList = new List<Collider2D>();
     
@@ -132,6 +135,16 @@ public class Tower : MonoBehaviour
     public void CloseUpgradeUI() {
         upgradeUI.SetActive(false);
         UImanager.main.SetHoveringState(false);
+    }
+
+    [SerializeField] private GameObject rangeVisual;
+
+    void OnMouseEnter() {
+        rangeVisual.SetActive(true);
+    }
+
+    void OnMouseExit() {
+        rangeVisual.SetActive(false);
     }
 
 

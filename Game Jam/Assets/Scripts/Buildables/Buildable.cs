@@ -16,6 +16,7 @@ public class Buildable : MonoBehaviour
     [SerializeField] private Button LRButton;
     [SerializeField] private Button AOEButton;
 
+
     public int BasicCost = 10;
     public int LRCost = 10;
     public int AOECost = 12;

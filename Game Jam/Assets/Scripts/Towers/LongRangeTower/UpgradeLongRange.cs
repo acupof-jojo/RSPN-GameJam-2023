@@ -123,5 +123,14 @@ public class UpgradeLongRange : MonoBehaviour
         UImanager.main.SetHoveringState(false);
     }
 
+    [SerializeField] private GameObject rangeVisual;
+
+    void OnMouseEnter() {
+        rangeVisual.SetActive(true);
+    }
+
+    void OnMouseExit() {
+        rangeVisual.SetActive(false);
+    }
 
 }

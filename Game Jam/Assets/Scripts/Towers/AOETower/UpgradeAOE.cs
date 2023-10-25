@@ -133,6 +133,15 @@ public class UpgradeAOE : MonoBehaviour
             attackWait -= Time.deltaTime;
         }
     }
+    
+    [SerializeField] private GameObject rangeVisual;
 
+    void OnMouseEnter() {
+        rangeVisual.SetActive(true);
+    }
+
+    void OnMouseExit() {
+        rangeVisual.SetActive(false);
+    }
 
 }
