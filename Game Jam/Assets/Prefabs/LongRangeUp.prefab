@@ -81,6 +81,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 7640672735260527958}
   m_SourcePrefab: {fileID: 100100000, guid: 5c4aa7d88384cca4a88afbc860633348, type: 3}
+--- !u!1 &1391745625274897215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6992127825990558465, guid: 5c4aa7d88384cca4a88afbc860633348, type: 3}
+  m_PrefabInstance: {fileID: 8239756027793010750}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &3255997696437623749 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6878930486825839611, guid: 5c4aa7d88384cca4a88afbc860633348, type: 3}
@@ -133,3 +138,4 @@ MonoBehaviour:
   sellButton: {fileID: 4459888025707594224}
   buildPlot: {fileID: 5983133483948069021, guid: a4b8bb2b2a053ca459a792f1486fa2ce, type: 3}
   targetList: []
+  rangeVisual: {fileID: 1391745625274897215}
