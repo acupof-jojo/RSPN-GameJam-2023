@@ -6,7 +6,7 @@ using TMPro;
 public class Enemy : MonoBehaviour
 {
 
-    public float maxSpeed = 2.0f;
+    // public float maxSpeed = 2.0f;
     Rigidbody2D r2d;
     public float health = 10;
     public int award = 1;
@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
     }
 
     void FixedUpdate() {
-        r2d.velocity = new Vector2((1) * maxSpeed, r2d.velocity.y);
+        // r2d.velocity = new Vector2((1) * maxSpeed, r2d.velocity.y);
 
         if(health <= 0) {
             EventManager.main.AddMoney(award);
