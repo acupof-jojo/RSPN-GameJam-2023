@@ -598,9 +598,10 @@ GameObject:
   - component: {fileID: 7432758006531622355}
   - component: {fileID: 3234621015841558739}
   - component: {fileID: 7728618196493532023}
+  - component: {fileID: 4672473379408634080}
   m_Layer: 0
   m_Name: BasicTower
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -793,6 +794,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &4672473379408634080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7604256071929828603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 577581573057f4c498780a3d23d30377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Buildable: {fileID: 5983133483948069021, guid: a4b8bb2b2a053ca459a792f1486fa2ce, type: 3}
+  health: 10
 --- !u!1 &7851928071125994353
 GameObject:
   m_ObjectHideFlags: 0

@@ -802,9 +802,10 @@ GameObject:
   - component: {fileID: 1151605210245425157}
   - component: {fileID: 2997503780891851320}
   - component: {fileID: 5028526778320863469}
+  - component: {fileID: 1522056223468046982}
   m_Layer: 0
   m_Name: AOE
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -963,6 +964,20 @@ MonoBehaviour:
   buildPlot: {fileID: 5983133483948069021, guid: a4b8bb2b2a053ca459a792f1486fa2ce, type: 3}
   targetList: []
   rangeVisual: {fileID: 3735207601425759287}
+--- !u!114 &1522056223468046982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8276085289322833075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 577581573057f4c498780a3d23d30377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Buildable: {fileID: 5983133483948069021, guid: a4b8bb2b2a053ca459a792f1486fa2ce, type: 3}
+  health: 10
 --- !u!1 &8639187782713761986
 GameObject:
   m_ObjectHideFlags: 0

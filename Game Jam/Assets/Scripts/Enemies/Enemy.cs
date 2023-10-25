@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
 
     // public float maxSpeed = 2.0f;
     Rigidbody2D r2d;
+    [Header("Attributes")]
     public float health = 10;
     public int award = 1;
 

@@ -1698,7 +1698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1214917771190677852, guid: a4b8bb2b2a053ca459a792f1486fa2ce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.131479
+      value: -4.1314793
       objectReference: {fileID: 0}
     - target: {fileID: 1214917771190677852, guid: a4b8bb2b2a053ca459a792f1486fa2ce, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6922,6 +6922,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 5432073867145152758, guid: 785f601e816974e83886af9b54371fa9, type: 3}
+  - {fileID: 5432073867145152758, guid: eb358d65ba5374180a74d9f2fb865c99, type: 3}
+  - {fileID: 5432073867145152758, guid: 569bbac207aee40d8afc27fc71e85255, type: 3}
   baseEnemies: 8
   enemiesPerSecond: 0.5
   timeBetweenWaves: 5
@@ -22084,7 +22086,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1032744979751583836, guid: 88947afd54b5f427ca8254dadb58fe4b, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1329832847516244792, guid: 88947afd54b5f427ca8254dadb58fe4b, type: 3}
       propertyPath: m_FlipX

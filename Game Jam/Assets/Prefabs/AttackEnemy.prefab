@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 6247695926216423854}
   - component: {fileID: 2147934755390151095}
   - component: {fileID: 8978444821775816196}
+  - component: {fileID: 2827490991433947687}
   m_Layer: 0
-  m_Name: PathedEnemy
+  m_Name: AttackEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -5177388603050735206, guid: 8884154dfe85442a3a3578be807dbcdf, type: 3}
-  m_Color: {r: 1, g: 0.8160377, b: 0.8160377, a: 1}
+  m_Color: {r: 0.8156863, g: 0.8160961, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
@@ -188,3 +189,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   award: 1
+--- !u!114 &2827490991433947687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5432073867145152758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9b458cf6c07f460ea5a6e1713815435, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
