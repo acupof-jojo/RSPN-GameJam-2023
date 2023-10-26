@@ -51,7 +51,7 @@ public class LevelManager : MonoBehaviour
     }
 
     public void SetLifeDisplay() {
-        lifeDisplay.text = currentLives.ToString();
+        lifeDisplay.text = "Lives: " + currentLives.ToString();
     }
 
     private void Restart()
