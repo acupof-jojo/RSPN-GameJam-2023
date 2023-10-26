@@ -150,6 +150,7 @@ public class AOE : MonoBehaviour
     }
 
     [SerializeField] private GameObject rangeVisual;
+    [SerializeField] private GameObject rangeOther;
 
     void OnMouseEnter() {
         rangeVisual.SetActive(true);
@@ -159,5 +160,5 @@ public class AOE : MonoBehaviour
         rangeVisual.SetActive(false);
     }
 
-
+    
 }

@@ -85,8 +85,16 @@ PrefabInstance:
       value: AOEUp
       objectReference: {fileID: 0}
     - target: {fileID: 8741830002773004919, guid: 7f6d7690f38b11f4fb610a0f23edda0f, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741830002773004919, guid: 7f6d7690f38b11f4fb610a0f23edda0f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741830002773004919, guid: 7f6d7690f38b11f4fb610a0f23edda0f, type: 3}
       propertyPath: m_Color.r
-      value: 0.7386399
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5028526778320863469, guid: 7f6d7690f38b11f4fb610a0f23edda0f, type: 3}
