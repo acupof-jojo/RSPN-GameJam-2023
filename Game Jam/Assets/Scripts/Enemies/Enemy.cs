@@ -29,8 +29,17 @@ public class Enemy : MonoBehaviour
         // r2d.velocity = new Vector2((1) * maxSpeed, r2d.velocity.y);
 
         if(health <= 0) {
+            Debug.Log("AHHHH");
+            EnemySpawner.enemiesAlive--;
+            Debug.Log(EnemySpawner.enemiesAlive);
+            Debug.Log(EnemySpawner.enemiesLeftToSpawn);
             EventManager.main.AddMoney(award);
             Destroy(gameObject);
+            if(EnemySpawner.enemiesAlive == 0 && EnemySpawner.enemiesLeftToSpawn == 0){
+                EventManager.main.AddMoney(EnemySpawner.waveAwards[EnemySpawner.currentWave-1]);
+                Debug.Log("Wave award "+EnemySpawner.waveAwards[EnemySpawner.currentWave-1] );
+                EnemySpawner.currentWave++;
+            }
         }
 
     }

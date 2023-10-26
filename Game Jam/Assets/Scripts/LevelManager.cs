@@ -26,7 +26,7 @@ public class LevelManager : MonoBehaviour
         restartButton.onClick.AddListener(Restart);
         GameOverOverlay.SetActive(false);
         restartButton.gameObject.SetActive(false);
-        lifeDisplay.text = currentLives.ToString();
+        lifeDisplay.text = "Lives: " + currentLives.ToString();
     }
 
     private void Awake()
