@@ -23,7 +23,7 @@ public class EventManager : MonoBehaviour
     {
         money = 100;
         //displayMoney = FindObjectOfType<TextMeshProUGUI>();
-        displayMoney.text = money.ToString();
+        displayMoney.text = money.ToString() + " seed(s)";
     }
 
     // Update is called once per frame
@@ -35,16 +35,16 @@ public class EventManager : MonoBehaviour
     public void AddMoney(int amount) {
         //moneyDisplay.text = money.ToString();
         money += amount;
-        displayMoney.text = money.ToString();
+        displayMoney.text = money.ToString() + " seed(s)";
     }
     
     public void spendMoney(int cost) {
         money -= cost;
-        displayMoney.text = money.ToString();
+        displayMoney.text = money.ToString() + " seed(s)";
     }
 
     public void gainMoney(int sellPrice) {
         money += sellPrice;
-        displayMoney.text = money.ToString();
+        displayMoney.text = money.ToString() + " seed(s)";
     }
 }
