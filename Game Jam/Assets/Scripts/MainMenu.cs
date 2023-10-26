@@ -10,11 +10,14 @@ public class MainMenu : MonoBehaviour
     public Button startButton; // Reference to your "Start" button
     public Button howToPlayButton;
 
+    public Button aboutCreditButton;
+
     private void Start()
     {
         // Attach the button click event to your custom method (e.g., StartGame)
         startButton.onClick.AddListener(StartGame);
         howToPlayButton.onClick.AddListener(HowToPlay);
+        aboutCreditButton.onClick.AddListener(AboutCredit);
     }
 
     // Custom method to switch to the "Map" scene
@@ -26,5 +29,9 @@ public class MainMenu : MonoBehaviour
     private void HowToPlay()
     {
         SceneManager.LoadScene("How To Play"); // "How To Play" should be the name of your scene
+    }
+
+    private void AboutCredit(){
+        SceneManager.LoadScene("About and Credits");
     }
 }
