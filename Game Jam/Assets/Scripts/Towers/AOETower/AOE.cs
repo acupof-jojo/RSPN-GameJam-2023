@@ -38,6 +38,7 @@ public class AOE : MonoBehaviour
         rangeCollider = GetComponent<CircleCollider2D>();
         sellButton.onClick.AddListener(SellTower);
         upgradeButton.onClick.AddListener(UpgradeTower);
+        rangeOther.SetActive(false);
     }
 
     // Update is called once per frame
@@ -159,6 +160,4 @@ public class AOE : MonoBehaviour
     void OnMouseExit() {
         rangeVisual.SetActive(false);
     }
-
-    
 }

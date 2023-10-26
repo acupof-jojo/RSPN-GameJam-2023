@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackSpeed: 1
-  aoeDamage: 2
+  aoeDamage: 3
   sellPrice: 200
   upgradeUI: {fileID: 3644032377741220460}
   sellButton: {fileID: 3467099742616919201}

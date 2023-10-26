@@ -18,7 +18,7 @@ public class EnemyAttack : MonoBehaviour
     void Start()
     {
         rangeCollider = GetComponent<CircleCollider2D>();
-        rangeCollider.radius = 1.2f;
+        rangeCollider.radius = 1f;
     }
 
     void OnTriggerEnter2D(Collider2D other) {

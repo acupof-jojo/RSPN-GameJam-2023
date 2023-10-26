@@ -17,7 +17,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private Button startWaveButton;
     [SerializeField] private GameObject waveUI;
     [SerializeField] private TextMeshProUGUI waveNumDisplay;
-    [SerializeField] public static int[] waveAwards = {70, 20, 20, 20, 20, 20, 20, 20, 20, 20,
+    [SerializeField] public static int[] waveAwards = {70, 40, 30, 30, 30, 20, 20, 20, 20, 20,
                                                 20, 20, 20, 20, 20, 20, 20, 20};
 
     [Header("Events")]
