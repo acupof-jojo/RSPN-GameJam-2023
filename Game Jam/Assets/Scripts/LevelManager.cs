@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; // Add this line to include the UnityEngine.UI namespace
+using TMPro;
 
 public class LevelManager : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] private Button restartButton;
 
+    [SerializeField] public TextMeshProUGUI lifeDisplay;
+
     public GameObject GameOverOverlay;
 
     void Start()
@@ -23,6 +26,7 @@ public class LevelManager : MonoBehaviour
         restartButton.onClick.AddListener(Restart);
         GameOverOverlay.SetActive(false);
         restartButton.gameObject.SetActive(false);
+        lifeDisplay.text = currentLives.ToString();
     }
 
     private void Awake()
@@ -44,6 +48,10 @@ public class LevelManager : MonoBehaviour
         GameOverOverlay.SetActive(true);
         restartButton.gameObject.SetActive(true);
 
+    }
+
+    public void SetLifeDisplay() {
+        lifeDisplay.text = currentLives.ToString();
     }
 
     private void Restart()
