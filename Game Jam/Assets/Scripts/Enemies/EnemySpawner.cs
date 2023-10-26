@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;  
+using UnityEngine.UI;
+using TMPro;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -13,6 +15,9 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float enemiesPerSecond = 0.5f;
     [SerializeField] private float timeBetweenWaves   =  5f;
     [SerializeField] private float difficultyScalingFactor   =  0.75f;
+    [SerializeField] private Button startWaveButton;
+    [SerializeField] private GameObject waveUI;
+    [SerializeField] private TextMeshProUGUI waveNumDisplay;
 
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent( );  
@@ -25,16 +30,19 @@ public class EnemySpawner : MonoBehaviour
 
     private void Awake()
     {
-        onEnemyDestroy.AddListener(EnemyDestroyed);
+        //onEnemyDestroy.AddListener(EnemyDestroyed);
+        startWaveButton.onClick.AddListener(StartSpawning);
     }
 
     // Start is called before the first frame update
     private void Start()
     {
-         StartCoroutine(StartWave());
+        //SpawnEnemy();
+        //StartCoroutine(SpawnEnemy());
     }
 
     // Update is called once per frame
+/*
     void Update()
     {
         if(!isSpawning) return;
@@ -52,17 +60,32 @@ public class EnemySpawner : MonoBehaviour
             EndWave();
         }
     }
-    
-    private void EnemyDestroyed()
-    {
-         enemiesAlive--;
+*/
+
+    void FixedUpdate() {
+
     }
 
+    void StartSpawning() {
+        Debug.Log("Starting Wave " + currentWave+1);
+        StartCoroutine(SpawnEnemy());
+        waveUI.SetActive(false);
+
+
+    }
+
+    private void EnemyDestroyed()
+    {
+        enemiesAlive--;
+
+        Debug.Log("enemies alive: " + enemiesAlive);
+
+    }
+/*
     private IEnumerator StartWave()
     {
         yield return new WaitForSeconds(timeBetweenWaves);
         isSpawning = true;
-        enemiesLeftToSpawn = EnemiesPerWave() ;
 
     }
 
@@ -74,14 +97,59 @@ public class EnemySpawner : MonoBehaviour
 
         StartCoroutine(StartWave());
     }
-  
-    private void SpawnEnemy()
+*/
+    private IEnumerator SpawnEnemy()
     {
-        GameObject prefabToSpawn = enemyPrefabs[2];
-        Instantiate(prefabToSpawn, LevelManager.main.startPoint.position, Quaternion.identity);  
+        for(int i = 0 ; i < enemyWavesArr[currentWave-1].GetLength(0) ; i++) {
+
+            GameObject prefabToSpawn = enemyPrefabs[enemyWavesArr[currentWave-1][i] - 1]; //enemyPrefabs[2];
+            Instantiate(prefabToSpawn, LevelManager.main.startPoint.position, Quaternion.identity);
+            enemiesAlive++;
+            Debug.Log("Waiting");
+
+            yield return new WaitForSeconds(enemiesPerSecond);
+
+        }
+
+        currentWave++;
+        waveUI.SetActive(true);
+        waveNumDisplay.text = "Wave " + (currentWave);
+        Debug.Log("test!");
+
+
     }
 
-    private int EnemiesPerWave(){
-        return Mathf.RoundToInt(baseEnemies*Mathf.Pow(currentWave, difficultyScalingFactor));
-    }
+
+    //  1 == carrier
+    //  2 == shovel
+    //  3 == lumber
+    //  4 == excavator
+    
+    static private int[] enemyWaveContent1 = {1};
+    static private int[] enemyWaveContent2 = {1, 1};
+    static private int[] enemyWaveContent3 = {1, 1};
+    static private int[] enemyWaveContent4 = {1, 1, 1, 1};
+    static private int[] enemyWaveContent5 = {2, 1, 1, 1};
+    static private int[] enemyWaveContent6 = {2, 2, 1, 1, 1, 1, 1};
+    static private int[] enemyWaveContent7 = {2, 1, 1, 2, 1, 1, 2, 1, 1};
+    static private int[] enemyWaveContent8 = {3, 3};
+    static private int[] enemyWaveContent9 = {3, 3, 3, 3, 3, 3};
+    static private int[] enemyWaveContent10 = {2, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3, 3, 3};
+    static private int[] enemyWaveContent11 = {2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3};
+    static private int[] enemyWaveContent12 = {2, 3, 2, 3, 2, 3, 2, 3};
+    static private int[] enemyWaveContent13 = {3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3};
+    static private int[] enemyWaveContent14 = {2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2};
+    static private int[] enemyWaveContent15 = {2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 1, 2};
+    static private int[] enemyWaveContent16 = {4, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3};
+    static private int[] enemyWaveContent17 = {4, 4, 3, 3, 3, 3, 3, 3};
+    static private int[] enemyWaveContent18 = {4, 4, 4, 4, 3, 3};
+
+
+    private int[][] enemyWavesArr = {enemyWaveContent1, enemyWaveContent2, 
+    enemyWaveContent3, enemyWaveContent4, enemyWaveContent5, enemyWaveContent6, 
+    enemyWaveContent7, enemyWaveContent8, enemyWaveContent9, enemyWaveContent10, 
+    enemyWaveContent11, enemyWaveContent12, enemyWaveContent13, enemyWaveContent14, 
+    enemyWaveContent15, enemyWaveContent16, enemyWaveContent17, enemyWaveContent18};
+    
+
 }
