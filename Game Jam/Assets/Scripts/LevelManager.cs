@@ -7,7 +7,7 @@ using TMPro;
 public class LevelManager : MonoBehaviour
 {
     [Header("Attributes")]
-    [SerializeField] public int startingLives = 20;
+    [SerializeField] public int startingLives = 10;
     public int currentLives;
     public static LevelManager main;
 

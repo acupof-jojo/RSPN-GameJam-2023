@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6370883111036080298}
   - component: {fileID: 6896594446207655972}
   - component: {fileID: 8736458926581902998}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,9 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Upgrade
-
-'
+  m_text: 'Increase range: 100'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -94,8 +92,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -150,7 +148,7 @@ GameObject:
   - component: {fileID: 724286256527564209}
   - component: {fileID: 8395828826639095989}
   - component: {fileID: 4171617956080482056}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LongRange
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -260,7 +258,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 3.6
 --- !u!50 &724286256527564209
 Rigidbody2D:
   serializedVersion: 4
@@ -301,9 +299,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabProjectile: {fileID: 895126029849927841, guid: 10953cf1f867fbd4a9ac6c11b8d5f6a6, type: 3}
-  attackSpeed: 2
-  upgradeCost: 20
-  sellPrice: 12
+  attackSpeed: 1.5
+  upgradeCost: 100
+  sellPrice: 100
+  isMouseOver: 1
   upgradeUI: {fileID: 3101966083385904434}
   upgradeButton: {fileID: 6878930486825839611}
   sellButton: {fileID: 5745971849555980750}
@@ -337,7 +336,7 @@ GameObject:
   - component: {fileID: 5345740491635321320}
   - component: {fileID: 7044427467435095014}
   - component: {fileID: 6878930486825839611}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Upgrade Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,7 +456,7 @@ GameObject:
   - component: {fileID: 5134154615166478611}
   - component: {fileID: 8130473958172283132}
   - component: {fileID: 2457005433205033613}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -473,7 +472,7 @@ RectTransform:
   m_GameObject: {fileID: 2684123186009990599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5497356960819036769}
@@ -534,7 +533,7 @@ GameObject:
   - component: {fileID: 2726919036372750559}
   - component: {fileID: 7248806800207680075}
   - component: {fileID: 1814476747618751087}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -588,7 +587,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sell
+  m_text: Decompose for 100 (to compensate for selection bug)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -615,8 +614,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -670,7 +669,7 @@ GameObject:
   - component: {fileID: 1236858056558468388}
   - component: {fileID: 1602833042963415225}
   - component: {fileID: 5828658034240761052}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -785,7 +784,7 @@ GameObject:
   - component: {fileID: 7263666840791395286}
   - component: {fileID: 1896759268211517698}
   - component: {fileID: 5745971849555980750}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Sell Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -904,7 +903,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5731589241783981884}
   - component: {fileID: 8927712132101729332}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: rangeVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -921,7 +920,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 7.2, y: 7.2, z: 6}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6736425423648343323}

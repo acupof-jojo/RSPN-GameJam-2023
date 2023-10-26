@@ -107,7 +107,7 @@ public class Tower : MonoBehaviour
     }
 
     void SellTower() {
-        EventManager.main.gainMoney(7);
+        EventManager.main.gainMoney(50);
 
         GameObject buildable = Instantiate(buildPlot, transform.position, transform.rotation);
 
@@ -116,11 +116,11 @@ public class Tower : MonoBehaviour
     }
 
     void UpgradeTower() {
-        if(EventManager.main.money < 15) {
+        if(EventManager.main.money < 100) {
             return;
         }
         
-        EventManager.main.spendMoney(15);
+        EventManager.main.spendMoney(100);
 
         GameObject upgrade = Instantiate(upgradeTo, transform.position, transform.rotation);
 

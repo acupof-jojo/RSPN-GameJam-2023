@@ -12,6 +12,18 @@ PrefabInstance:
       propertyPath: attackSpeed
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 1151605210245425157, guid: 7f6d7690f38b11f4fb610a0f23edda0f, type: 3}
+      propertyPath: m_Radius
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760387296971793286, guid: 7f6d7690f38b11f4fb610a0f23edda0f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760387296971793286, guid: 7f6d7690f38b11f4fb610a0f23edda0f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.6
+      objectReference: {fileID: 0}
     - target: {fileID: 3277526758929255199, guid: 7f6d7690f38b11f4fb610a0f23edda0f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.66
@@ -129,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabProjectile: {fileID: 4699022052351952524, guid: 3f2007f484a6af84683c92853747d8aa, type: 3}
-  attackSpeed: 0.1
+  attackSpeed: 0.5
   upgradeUI: {fileID: 5175972652573126752}
   upgradeButton: {fileID: 8062427508360387932}
   sellButton: {fileID: 4997613812003632813}

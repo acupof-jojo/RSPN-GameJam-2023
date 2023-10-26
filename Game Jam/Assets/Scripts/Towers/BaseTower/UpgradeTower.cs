@@ -104,7 +104,7 @@ public class UpgradeTower : MonoBehaviour
     }
 
     void SellTower() {
-        EventManager.main.gainMoney(15);
+        EventManager.main.gainMoney(50);
 
         GameObject buildable = Instantiate(buildPlot, transform.position, transform.rotation);
 

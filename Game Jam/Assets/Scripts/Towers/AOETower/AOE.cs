@@ -103,11 +103,11 @@ public class AOE : MonoBehaviour
     }
 
     void UpgradeTower() {
-        if(EventManager.main.money < 15) {
+        if(EventManager.main.money < 100) {
             return;
         }
         
-        EventManager.main.spendMoney(15);
+        EventManager.main.spendMoney(100);
 
         GameObject upgrade = Instantiate(upgradeTo, transform.position, transform.rotation);
 

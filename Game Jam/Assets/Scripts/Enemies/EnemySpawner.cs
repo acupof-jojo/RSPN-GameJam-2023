@@ -1,9 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Events;  
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -18,8 +17,8 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private Button startWaveButton;
     [SerializeField] private GameObject waveUI;
     [SerializeField] private TextMeshProUGUI waveNumDisplay;
-    [SerializeField] public static int[] waveAwards = {80, 150, 240, 330, 460, 590, 710, 940, 1050, 1220, 
-                                                1480, 1700, 1860, 2100, 2460, 2940, 3440, 3960};
+    [SerializeField] public static int[] waveAwards = {70, 20, 20, 20, 20, 20, 20, 20, 20, 20,
+                                                20, 20, 20, 20, 20, 20, 20, 20};
 
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent( );  
@@ -33,7 +32,10 @@ public class EnemySpawner : MonoBehaviour
     private void Awake()
     {
         //onEnemyDestroy.AddListener(EnemyDestroyed);
-        startWaveButton.onClick.AddListener(StartSpawning);
+        if(enemiesAlive == 0)
+        {
+            startWaveButton.onClick.AddListener(StartSpawning);
+        }
     }
 
     // Start is called before the first frame update
@@ -44,9 +46,13 @@ public class EnemySpawner : MonoBehaviour
     }
 
     // Update is called once per frame
-/*
-    void Update()
+
+   /* void Update()
     {
+        if(enemiesAlive == 0)
+        {
+            
+        }
         if(!isSpawning) return;
 
         timeSinceLastSpawn += Time.deltaTime;
@@ -61,8 +67,7 @@ public class EnemySpawner : MonoBehaviour
         if(enemiesAlive == 0 && enemiesLeftToSpawn == 0){
             EndWave();
         }
-    }
-*/
+    }*/
 
     void FixedUpdate() {
 
@@ -117,10 +122,10 @@ public class EnemySpawner : MonoBehaviour
 
         //currentWave++;
         //EventManager.main.AddMoney(award);
+
         waveUI.SetActive(true);
         waveNumDisplay.text = "Wave " + (currentWave);
         Debug.Log("test!");
-
 
     }
 

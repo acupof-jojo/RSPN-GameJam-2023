@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 0.06787426
       objectReference: {fileID: 0}
+    - target: {fileID: 1814476747618751087, guid: 5c4aa7d88384cca4a88afbc860633348, type: 3}
+      propertyPath: m_text
+      value: Decompose for 200 (To compensate for selection bug)
+      objectReference: {fileID: 0}
     - target: {fileID: 1822310399639954878, guid: 5c4aa7d88384cca4a88afbc860633348, type: 3}
       propertyPath: m_Name
       value: LongRangeUp
@@ -22,7 +26,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4149027703180657666, guid: 5c4aa7d88384cca4a88afbc860633348, type: 3}
       propertyPath: m_Radius
-      value: 3
+      value: 5.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5731589241783981884, guid: 5c4aa7d88384cca4a88afbc860633348, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5731589241783981884, guid: 5c4aa7d88384cca4a88afbc860633348, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10.8
       objectReference: {fileID: 0}
     - target: {fileID: 6736425423648343323, guid: 5c4aa7d88384cca4a88afbc860633348, type: 3}
       propertyPath: m_LocalPosition.x
@@ -74,7 +86,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8395828826639095989, guid: 5c4aa7d88384cca4a88afbc860633348, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7760278697697561329, guid: 5c4aa7d88384cca4a88afbc860633348, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1822310399639954878, guid: 5c4aa7d88384cca4a88afbc860633348, type: 3}
@@ -131,8 +144,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabProjectile: {fileID: 895126029849927841, guid: 10953cf1f867fbd4a9ac6c11b8d5f6a6, type: 3}
-  attackSpeed: 1
-  sellPrice: 20
+  attackSpeed: 1.5
+  sellPrice: 200
   upgradeUI: {fileID: 6437081772264701196}
   upgradeButton: {fileID: 3255997696437623749}
   sellButton: {fileID: 4459888025707594224}

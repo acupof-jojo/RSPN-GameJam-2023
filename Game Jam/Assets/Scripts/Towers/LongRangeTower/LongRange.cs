@@ -21,6 +21,7 @@ public class LongRange : MonoBehaviour
 
     public int upgradeCost = 20;
     public int sellPrice = 12;
+    public bool isMouseOver = true;
 
 
     [SerializeField] private GameObject upgradeUI;
