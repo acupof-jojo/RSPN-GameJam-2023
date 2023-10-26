@@ -22,7 +22,7 @@ public class EventManager : MonoBehaviour
     void Start()
     {
         money = 100;
-        displayMoney = FindObjectOfType<TextMeshProUGUI>();
+        //displayMoney = FindObjectOfType<TextMeshProUGUI>();
         displayMoney.text = money.ToString();
     }
 
