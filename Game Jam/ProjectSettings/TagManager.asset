@@ -43,6 +43,9 @@ TagManager:
   - name: Background
     uniqueID: 106812063
     locked: 0
+  - name: Art Map
+    uniqueID: 30693979
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
