@@ -29,6 +29,7 @@ public class EnemyMovement : MonoBehaviour
                 EnemySpawner.onEnemyDestroy.Invoke();
                 LevelManager.main.currentLives --;
                 LevelManager.main.SetLifeDisplay();
+                EnemySpawner.enemiesAlive--;
                 Destroy(gameObject);
                 return;
             }else{
