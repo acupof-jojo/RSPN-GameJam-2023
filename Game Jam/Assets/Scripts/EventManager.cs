@@ -21,7 +21,7 @@ public class EventManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        money = 220;
+        money = 80;
         //displayMoney = FindObjectOfType<TextMeshProUGUI>();
         displayMoney.text = money.ToString() + " seed(s)";
     }
