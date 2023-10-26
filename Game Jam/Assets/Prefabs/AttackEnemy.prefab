@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 6247695926216423854}
   - component: {fileID: 2147934755390151095}
   - component: {fileID: 8978444821775816196}
-  - component: {fileID: 2827490991433947687}
   m_Layer: 0
   m_Name: AttackEnemy
   m_TagString: Enemy
@@ -190,21 +189,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 60
   award: 10
---- !u!114 &2827490991433947687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5432073867145152758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9b458cf6c07f460ea5a6e1713815435, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackSpeed: 0.3
-  enemyDamage: 3
-  targetList: []
 --- !u!1 &6744787167537276224
 GameObject:
   m_ObjectHideFlags: 0

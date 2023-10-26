@@ -1155,8 +1155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d7439b12648a4165ab14e4302f13c3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingLives: 20
-  currentLives: 20
+  startingLives: 10
+  currentLives: 10
   startPoint: {fileID: 2075812260}
   path:
   - {fileID: 1271279105}

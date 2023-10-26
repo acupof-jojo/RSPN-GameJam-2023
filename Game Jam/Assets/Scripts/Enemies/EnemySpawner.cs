@@ -17,8 +17,8 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private Button startWaveButton;
     [SerializeField] private GameObject waveUI;
     [SerializeField] private TextMeshProUGUI waveNumDisplay;
-    [SerializeField] public static int[] waveAwards = {70, 40, 30, 30, 30, 20, 20, 20, 20, 20,
-                                                20, 20, 20, 20, 20, 20, 20, 20};
+    [SerializeField] public static int[] waveAwards = {70, 40, 30, 30, 30, 20, 10, 0, 0, 0,
+                                                0, 0, 0, 0, 0, 0, 0, 0};
 
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent( );  
