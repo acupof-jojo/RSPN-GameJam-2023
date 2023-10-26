@@ -2116,17 +2116,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88947afd54b5f427ca8254dadb58fe4b, type: 3}
---- !u!114 &166286017 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5211287771880884632, guid: 2ca63e5dbb4e34aeb92b73a392307521, type: 3}
-  m_PrefabInstance: {fileID: 1937619879}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &170791363 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5278819851270156898, guid: 88947afd54b5f427ca8254dadb58fe4b, type: 3}
@@ -12394,7 +12383,7 @@ PrefabInstance:
     - target: {fileID: 4443458840386528869, guid: 7fc95e6e0ae4a4a5d8067180bea3e3db, type: 3}
       propertyPath: displayMoney
       value: 
-      objectReference: {fileID: 166286017}
+      objectReference: {fileID: 602909339}
     - target: {fileID: 7729573997917406446, guid: 7fc95e6e0ae4a4a5d8067180bea3e3db, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0899963
